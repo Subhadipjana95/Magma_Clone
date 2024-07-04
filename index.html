@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magma-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Assets/Magma favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <nav>
+                <img src="./Assets/Logo.png" alt="Logo isn't loaded">
+                <div id="nav-buttons">
+                    <button>Book a Demo</button>
+                    <button><i class="ri-menu-line"></i></button>
+                </div>
+            </nav>
+            <div class="bottom-txt">
+                <h1>Experience Real <br> Estate Agility</h1>
+                <div class="bottom-txt2">
+                    <h4>Create a Digital Twin Token (DTT®) of your <br>existing building and release the potential of <br>Web3.</h4>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="scrolling">
+                <h4>SCROLL</h4>
+                <i class="ri-arrow-down-line"></i>
+            </div>
+            <video src="./Assets/1.mp4" autoplay loop muted></video>
+        </div>
+        <div id="page2">
+            <h2>CERTIFY YOUR BUILDING AS A DIGITAL TWIN TOKEN (DTT®)</h2>
+            <h1>The Digital Twin Token is a unique digital asset backed by property data. <br> Magma combines your building's components and systems essential information into a DTT®.</h1>
+        </div>
+        <div id="page3">
+            <canvas></canvas>
+        </div>
+        <div id="page4">
+            <h2>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS</h2>
+            <h1>Users connect directly to the DTT® without any intermediaries. As Stakeholder, they have the power to upload and verify information that enriches the Digital Twin Token. A Stakeholder's ability to access validated-data to perform tasks depends on their specific role.</h1>
+        </div>
+        <div id="page5">
+            <canvas></canvas>
+        </div>
+        <div id="page6">
+            <h2>INCREASE YOUR DIGITAL TWIN TOKEN'S VALUE</h2>
+            <h1>DTT® data increases the value of your digital asset by lowering operational costs, improving energy use, assisting commercialization, and boosting the liquidity of your building.</h1>
+        </div>
+        <div id="page7">
+            <div class="page7-cir">
+                <div class="page7-cir-inner"></div>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div id="page8">
+            <div class="page8-bottom">
+                <h1>Magma DTT®</h1>
+                <button>LEARN MORE</button>
+            </div>
+            <video preload="auto" autoplay muted loop src="./Assets/2.mp4"></video>
+            <!-- Task:- Page8 k page7 a niye giye scrollTrigger lagiye dekhbo effect ta ante pari naki -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
