@@ -628,3 +628,18 @@ gsap.to(".page7-cir-inner",{
     },
     opacity: 1
 })
+gsap.to("#page7>video",{
+    scrollTrigger:{
+        trigger:`#page7>video`,
+        start:`98% -35%`,
+        end:`98% -60%`,
+        scroller:`#main`,
+        scrub:.5,
+    },
+    scale:1,
+    opacity: 1,
+    zIndex: 9
+})
+/*
+Task:-> Magma DDT Rotate korate hobe scrollTrigger lagiye...(<Span> diye chesta korbo vab6i..!)
+*/

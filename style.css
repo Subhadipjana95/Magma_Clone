@@ -229,12 +229,14 @@ html, body{
     height: 100vh;
     width: 100vw;
     position: relative;
+    overflow: hidden;
     background-color: var(--margecol2);
 }
 #page7>canvas{
     height: 100vh;
     width: 100vw;
     position: relative;
+    z-index: 7;
 }
 .page7-cir{
     display: flex;
@@ -245,7 +247,7 @@ html, body{
     border-radius: 50%;
     border: 1px solid #ecf2ff69;
     position: absolute;
-    z-index: 9;
+    z-index: 8;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -260,32 +262,39 @@ html, body{
     opacity: 0;
 }
 
+#page7>video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 6;
+    opacity: 0;
+    scale: 3.2;
+}
+
 #page8{
     height: 100vh;
     width: 100vw;
     position: relative;
     background-color: var(--bodycol);
 }
-#page8>video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-.page8-bottom{
+.page7-bottom{
     position: absolute;
     left: 50%;
     bottom: 10%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 10;
+    background-color: red;
 }
-.page8-bottom>h1{
+.page7-bottom>h1{
     color: var(--elemoutline);
     font-size: 6.5vw;
     font-weight: 350;
     margin-bottom: 2vw;
+    overflow: hidden;
 }
-.page8-bottom>button{
+.page7-bottom>button{
     padding: 0.8vw 2.8vw;
     border: 1px solid var(--elemoutline);
     color: var(--bodycol);
@@ -293,3 +302,11 @@ html, body{
     border-radius: 50px;
     font-size: 1vw;
 }
+/* 
+#page8>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+ */
