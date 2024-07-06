@@ -607,39 +607,109 @@ function canvas3() {
 }
 canvas3()
 
-gsap.to(".page7-cir",{
-    scrollTrigger:{
-        trigger:`.page7-cir`,
-        start:`top 15%`,
-        end:`bottom -100%`,
-        scroller:`#main`,
-        scrub:.5,
+gsap.to(".page7-cir", {
+    scrollTrigger: {
+        trigger: `.page7-cir`,
+        start: `top 15%`,
+        end: `bottom -80%`,
+        scroller: `#main`,
+        scrub: .5,
     },
-    scale:7,
+    scale: 7,
     opacity: 1
 })
-gsap.to(".page7-cir-inner",{
-    scrollTrigger:{
-        trigger:`.page7-cir-inner`,
-        start:`top 20%`,
-        end:`bottom -100%`,
-        scroller:`#main`,
-        scrub:.5,
+gsap.to(".page7-cir-inner", {
+    scrollTrigger: {
+        trigger: `.page7-cir-inner`,
+        start: `top 20%`,
+        end: `bottom -80%`,
+        scroller: `#main`,
+        scrub: .5,
     },
     opacity: 1
 })
-gsap.to("#page7>video",{
-    scrollTrigger:{
-        trigger:`#page7>video`,
-        start:`98% -35%`,
-        end:`98% -60%`,
-        scroller:`#main`,
-        scrub:.5,
+
+gsap.to("#page7>video", {
+    scrollTrigger: {
+        trigger: `#page7>video`,
+        start: `98% -35%`,
+        end: `98% -60%`,
+        scroller: `#main`,
+        scrub: .5,
     },
-    scale:1,
+    scale: 1,
     opacity: 1,
     zIndex: 9
 })
-/*
-Task:-> Magma DDT Rotate korate hobe scrollTrigger lagiye...(<Span> diye chesta korbo vab6i..!)
-*/
+
+
+gsap.from(".page7-bottom>.hidden>h1", {
+    scrollTrigger: {
+        trigger: `.page7-bottom>.hidden>h1`,
+        start: `40% -30%`,
+        end: `bottom -50%`,
+        scroller: `#main`,
+        scrub: 2,
+    },
+    y: 1050,
+    opacity: .5,
+    stagger: .2,
+})
+gsap.from(".page7-bottom>button", {
+    scrollTrigger: {
+        trigger: `.page7-bottom>button`,
+        start: `5% -30%`,
+        end: `bottom -50%`,
+        scroller: `#main`,
+        scrub: 2,
+    },
+    y: 1050,
+    opacity: .2,
+    stagger: .2,
+})
+
+gsap.from(".left8>h1", {
+    scrollTrigger: {
+        trigger: `.left8>h1`,
+        start: `top bottom`,
+        end: `bottom 90%`,
+        scroller: `#main`,
+        scrub: 2,
+    },
+    y: 100,
+    opacity: 0.5,
+    stagger: 2,
+})
+gsap.from(".right8-img", {
+    scrollTrigger: {
+        trigger: `.right8-img`,
+        start: `top bottom`,
+        end: `bottom 90%`,
+        scroller: `#main`,
+        scrub: 2,
+    },
+    y: 100,
+    opacity: 0.5,
+    stagger: 2,
+})
+gsap.from(".right9-txt", {
+    scrollTrigger: {
+        trigger: `.right9-txt`,
+        start: `top bottom`,
+        end: `bottom 90%`,
+        scroller: `#main`,
+        scrub: 2,
+    },
+    y: 100,
+    opacity: 0.5,
+    stagger: 2,
+})
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2.6,
+    spaceBetween: 50,
+    freeMode: true,
+});
+
+

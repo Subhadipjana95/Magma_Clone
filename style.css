@@ -1,60 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --bodycol: #0a3cce;
     --elemoutline: #ecf2ff;
     --textbefcol: #ecf2ff69;
-    --margecol1:#133AD1;
+    --margecol1: #133AD1;
     --margecol2: #0F36C6;
+    --margecol3: #0440D4;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Jost";
 }
-html, body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-#main{
+#main {
     position: relative;
     overflow: hidden;
     background-color: var(--bodycol);
 }
-#page1{
+
+#page1 {
     height: 100vh;
     width: 100vw;
     position: relative;
 }
-#page1>video{
+
+#page1>video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#page1>nav{
+
+#page1>nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    height:6.5vw;
+    height: 6.5vw;
     width: 100%;
     padding: 0 3vw;
 }
-#page1>nav img{
+
+#page1>nav img {
     height: 5vw;
 }
 
-#nav-buttons{
+#nav-buttons {
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 1vw;
 }
 
-#nav-buttons button{
+#nav-buttons button {
     padding: 0.8vw 1.6vw;
     border: 1px solid var(--elemoutline);
     color: var(--elemoutline);
@@ -63,7 +70,7 @@ html, body{
     font-size: 1vw;
 }
 
-.bottom-txt{
+.bottom-txt {
     position: absolute;
     bottom: 8%;
     left: 8%;
@@ -71,12 +78,14 @@ html, body{
     width: 45%;
     color: var(--elemoutline);
 }
-.bottom-txt>h1{
+
+.bottom-txt>h1 {
     font-size: 6.5vw;
     line-height: 1;
     font-weight: 350;
 }
-.bottom-txt2{
+
+.bottom-txt2 {
     height: 30%;
     width: 90%;
     position: absolute;
@@ -86,11 +95,13 @@ html, body{
     justify-content: flex-start;
     gap: 2.5vw;
 }
-.bottom-txt2>h4{
+
+.bottom-txt2>h4 {
     font-size: 1.3vw;
     font-weight: 300;
 }
-.bottom-txt2>button{
+
+.bottom-txt2>button {
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -101,7 +112,8 @@ html, body{
     border-radius: 50px;
     font-size: 1vw;
 }
-.scrolling{
+
+.scrolling {
     position: absolute;
     bottom: 7%;
     right: 6%;
@@ -111,11 +123,13 @@ html, body{
     gap: 1vw;
     color: var(--elemoutline);
 }
-.scrolling>h4{
+
+.scrolling>h4 {
     font-size: 1.1vw;
     font-weight: 320;
 }
-.scrolling>i{
+
+.scrolling>i {
     font-size: 1.3vw;
     animation-name: scroll1;
     animation-duration: 3s;
@@ -123,20 +137,28 @@ html, body{
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
 @keyframes scroll1 {
-    0%, 100%, 20%, 50%, 80%{
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
         transform: translateY(0);
     }
-    40%{
+
+    40% {
         transform: translateY(-7px);
     }
-    60%{
+
+    60% {
         transform: translateY(-5px);
     }
-    
+
 }
 
-#page2{
+#page2 {
     height: 80vh;
     width: 100vw;
     background-color: var(--margecol1);
@@ -148,28 +170,33 @@ html, body{
     padding: 0 8vw;
     color: var(--elemoutline);
 }
-#page2>h2{
+
+#page2>h2 {
     font-weight: 320;
     margin-bottom: 4vw;
 }
-#page2>h1{
+
+#page2>h1 {
     width: 95%;
     font-weight: 350;
     font-size: 4.5vw;
     line-height: 1.2;
     color: var(--textbefcol);
 }
-#page3{
+
+#page3 {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
-#page3>canvas{
+
+#page3>canvas {
     max-height: 100vh;
     max-width: 100vw;
     position: relative;
 }
-#page4{
+
+#page4 {
     height: 100vh;
     width: 100vw;
     background-color: var(--margecol2);
@@ -181,31 +208,36 @@ html, body{
     padding: 0 8vw;
     color: var(--elemoutline);
 }
-#page4>h2{
+
+#page4>h2 {
     font-weight: 320;
     margin-bottom: 4vw;
 }
-#page4>h1{
+
+#page4>h1 {
     width: 95%;
     font-weight: 350;
     font-size: 4.5vw;
     line-height: 1.2;
     color: var(--textbefcol);
 }
-#page5{
+
+#page5 {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
-#page5>canvas{
+
+#page5>canvas {
     max-height: 100vh;
     max-width: 100vw;
     position: relative;
 }
-#page6{
+
+#page6 {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to bottom, var(--margecol2),#193DC6);
+    background: linear-gradient(to bottom, var(--margecol2), #193DC6);
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -214,31 +246,36 @@ html, body{
     padding: 0 8vw;
     color: var(--elemoutline);
 }
-#page6>h2{
+
+#page6>h2 {
     font-weight: 320;
     margin-bottom: 4vw;
 }
-#page6>h1{
+
+#page6>h1 {
     width: 95%;
     font-weight: 350;
     font-size: 4.5vw;
     line-height: 1.2;
     color: var(--textbefcol);
 }
-#page7{
+
+#page7 {
     height: 100vh;
     width: 100vw;
     position: relative;
     overflow: hidden;
     background-color: var(--margecol2);
 }
-#page7>canvas{
+
+#page7>canvas {
     height: 100vh;
     width: 100vw;
     position: relative;
     z-index: 7;
 }
-.page7-cir{
+
+.page7-cir {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,16 +290,17 @@ html, body{
     transform: translate(-50%, -50%);
     opacity: 0;
 }
-.page7-cir-inner{
+
+.page7-cir-inner {
     height: 50%;
     width: 50%;
     border-radius: 50%;
     border: 1px solid var(--elemoutline);
-    background-color: #0a3bce4b;
+    background-color: #15379f82;
     opacity: 0;
 }
 
-#page7>video{
+#page7>video {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -272,29 +310,28 @@ html, body{
     scale: 3.2;
 }
 
-#page8{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    background-color: var(--bodycol);
-}
-.page7-bottom{
+.page7-bottom {
     position: absolute;
     left: 50%;
     bottom: 10%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 10;
-    background-color: red;
+    overflow-y: hidden;
 }
-.page7-bottom>h1{
+
+.page7-bottom>.hidden {
+    overflow-y: hidden;
+}
+
+.page7-bottom>.hidden>h1 {
     color: var(--elemoutline);
     font-size: 6.5vw;
     font-weight: 350;
     margin-bottom: 2vw;
-    overflow: hidden;
 }
-.page7-bottom>button{
+
+.page7-bottom>button {
     padding: 0.8vw 2.8vw;
     border: 1px solid var(--elemoutline);
     color: var(--bodycol);
@@ -302,11 +339,153 @@ html, body{
     border-radius: 50px;
     font-size: 1vw;
 }
-/* 
-#page8>video{
+
+#page8 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: var(--margecol3);
+    display: flex;
+}
+
+.left8 {
+    position: relative;
+    height: 100%;
+    width: 36%;
+}
+
+.left8>h1 {
+    font-size: 6.5vw;
+    line-height: 0.9;
+    font-weight: 320;
+    top: 35%;
+    right: 10%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: var(--elemoutline);
+}
+
+.right8 {
+    position: relative;
+    height: 100%;
+    width: 64%;
+}
+
+.right8-img {
+    position: absolute;
+    background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+    background-size: cover;
+    height: 60%;
+    width: 90%;
+    border-radius: 20px;
+    top: 55%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#page9 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: var(--margecol3);
+}
+.right9{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    left: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3vw 2vw 3vw 0;
+}
+.right9-txt{
+    color: var(--elemoutline);
+    width: 90%;
+}
+.right9-txt>h1{
+    font-size: 1.6vw;
+    font-weight: 500;
+    margin-bottom: 0.8vw;
+}
+.right9-txt>h4{
+    font-size: 1.6vw;
+    font-weight: 300;
+    margin-bottom: 4vw;
+}
+
+#page10{
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    background-color: var(--elemoutline);
+}
+#page10>h1{
+    font-size: 6.5vw;
+    font-weight: 320;
+    position: absolute;
+    margin: 3vw 0 5vw 0;
+    left: 10%;
+}
+.swiper{
+    position: absolute !important;
+    width: 100%;
+    height: calc(110vh - 12.5vw);
+    bottom: 5%;
+}
+
+.swiper-slide{
+    padding: 0 1vw;
+    margin: 6vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-cont{
+    border-radius: 25px;
+    overflow: hidden;
+}
+.img-cont>img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    z-index: 1;
+    object-fit: contain;
+    object-position: center;
+    scale: 1;
+    transition: all ease 0.3s;
 }
- */
+.img-cont:hover .img-cont>img{
+    scale: 1.3;
+}
+.swip-txt{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+}
+.swip-txt>h2{
+    font-weight: 400;
+    font-size: 2.4vw;
+    margin-bottom: 1vw;
+}
+.swip-txt>ul{
+    margin-left: 0.5vw;
+    list-style-type: none;
+}
+.swip-txt>ul>li{
+    position: relative;
+    background-image: url(./Assets/tick.svg);
+    padding: 0 0 0 1.4vw;
+    background-position: 0 0.5vw;
+    background-size: 0.7vw auto;
+    background-repeat: no-repeat;
+    margin: 0 0 0.3vw;
+}
+.slide1{
+    margin-left: 10vw;
+}
+#page11{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: #042473;
+}
