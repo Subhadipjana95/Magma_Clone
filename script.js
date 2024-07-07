@@ -707,8 +707,8 @@ gsap.from(".right9-txt", {
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.6,
-    spaceBetween: 50,
+    slidesPerView: 3,
+    spaceBetween: 10,
     freeMode: true,
 });
 
