@@ -68,6 +68,12 @@ body {
     background-color: var(--bodycol);
     border-radius: 50px;
     font-size: 1vw;
+    z-index: 10;
+}
+
+#nav-buttons button:nth-child(2n){
+    color: var(--bodycol);
+    background-color: var(--elemoutline);
 }
 
 .bottom-txt {
